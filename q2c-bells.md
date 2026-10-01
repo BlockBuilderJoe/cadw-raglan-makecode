@@ -1,4 +1,3 @@
-### @hideIteration true
 ### @hideDone true
 
 # Edward's Bell Communication System

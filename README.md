@@ -27,7 +27,7 @@ The learner presses the green Play button, which registers the chat command, and
 
 ## Format rules
 
-- Metadata is `### @hideIteration true` and `### @hideDone true` only. The files do **not** use `@explicitHints`, which makes hints show by default, or `@unifiedToolbox`, which flattens the toolbox (the two faults reported on the first bell tutorial). They do not use `@flyoutOnly` either.
+- Metadata is `### @hideDone true`. Keep step controls visible: `@hideIteration true` hides Previous/Next and the step counter, trapping these multi-step lessons at Predict. `lockedEditor=1` keeps the learner in the tutorial and `@hideDone` leaves success confirmation to the world. The files do **not** use `@explicitHints`, which makes hints show by default, or `@unifiedToolbox`, which flattens the toolbox (the two faults reported on the first bell tutorial). They do not use `@flyoutOnly` either.
 - Hints sit under `#### ~ tutorialhint`, so they appear only when asked for. Every step has a `blocks` or `ghost` fence, so its toolbox stays filtered.
 - Each Notebook page stays under about 600 characters (the specification's QA-01).
 - Fences are MakeCode Static TypeScript for the Minecraft target (`player.onChat`, `agent.teleport`, `agent.move`, `agent.turn`, `agent.inspectBlock`, `loops.pause`, `player.say`). The older `agent.inspect(AgentInspection.Block, …)` is deprecated in the current target and is not used.
@@ -52,6 +52,6 @@ These are tracked on the Raglan card (Cadw Galeri 3). The tutorials follow Sarah
 
 **Check in client (first Code Builder test)**
 - `agent inspect block forward = Wildflowers` (and `= Leaf Litter`) is true in front of the garden's targets. The names `WILDFLOWERS`, `LEAF_LITTER` and `ROSE_BUSH` exist in the current MakeCode Minecraft target (checked 30 Sep 2026).
-- Hints appear only on request, the toolbox shows filtered categories, and Next/Back works with `@hideIteration`.
+- Hints appear only on request, the toolbox shows filtered categories, and Next/Back reaches every page. Check the last page has no Done button.
 - The text `join` block is under ADVANCED then TEXT, as Sarah's text says.
 - The garden has no Rose Bushes yet, so the optional Boolean OR extension cannot be tried in the world.
