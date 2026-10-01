@@ -1,3 +1,4 @@
+### @explicitHints true
 ### @hideDone true
 
 # Edward's Mechanical Gardener
