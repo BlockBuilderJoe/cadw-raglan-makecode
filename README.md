@@ -22,6 +22,21 @@ Q3D's and Q3E's "reopen your existing program" buttons (Debug My Code, Start Tes
 
 When testing, add `skipgithubcache=1` after `?`. Never add a second `#branch` fragment: the default branch is what learners get.
 
+## Edward's Workshop (Galeri 3 1.0.1071, 18 Nov 2026)
+
+Quest 2 moved from the castle's cellar and Terraced Gardens into Edward's Workshop, the off-map building reached through
+the Cellars' oak door. The bell platform and the gardener's plot are the same builds at new coordinates, so each has a
+copy of its tutorial that differs only in where it teleports the Agent:
+
+| File | Agent's start | Used by |
+| --- | --- | --- |
+| `q2c-bells-workshop.md` | 8250 4 17298, facing north (Bell 1's plate ahead at Z17297, Bell 2's behind at Z17299) | Galeri 3 from 1.0.1071 |
+| `q2e-gardener-workshop.md` | 8232 8 17264, facing north, the bottom-left corner of the plot (X8232-8241, Z17255-17264) | Galeri 3 from 1.0.1071 |
+| `q2c-bells.md`, `q2e-gardener.md` | 8623 7 16941 and 8521 -1 16945, at the castle | world copies made before 1.0.1071 |
+
+The older files stay so that copies of the world already handed out keep working. Anything else changed in one of a
+pair should be changed in the other.
+
 ## The world confirms success
 
 The learner presses the green Play button, which registers the chat command, and then types `ring` or `check` in the Minecraft chat. The Raglan runtime on Galeri 3 watches the Agent, not the code. The tutorials never announce success themselves (`@hideDone`), and they never ask the learner to add code that reports its own success.
@@ -63,4 +78,4 @@ These are tracked on the Raglan card (Cadw Galeri 3). The tutorials follow Sarah
 - `agent inspect block forward = Wildflowers` (and `= Leaf Litter`) is true in front of the garden's targets. The names `WILDFLOWERS`, `LEAF_LITTER` and `ROSE_BUSH` exist in the current MakeCode Minecraft target (checked 30 Sep 2026).
 - Hints appear only on request, the toolbox shows filtered categories, and Next/Back reaches every page. Check the last page has no Done button.
 - The text `join` block is under ADVANCED then TEXT, as Sarah's text says.
-- The garden has no Rose Bushes yet, so the optional Boolean OR extension cannot be tried in the world.
+- Rose Bushes for the optional Boolean OR extension: from Galeri 3 1.0.1071 a button beside the plot in the Walled Garden plants three in the garden and clears them again (the Techno Mentor's Reset clears them too). Before that the garden had none, so the extension could not be tried in the world.
