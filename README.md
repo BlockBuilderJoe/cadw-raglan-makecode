@@ -32,7 +32,13 @@ copy of its tutorial that differs only in where it teleports the Agent:
 | --- | --- | --- |
 | `q2c-bells-workshop.md` | 8250 4 17298, facing north (Bell 1's plate ahead at Z17297, Bell 2's behind at Z17299) | Galeri 3 from 1.0.1071 |
 | `q2e-gardener-workshop.md` | 8232 8 17264, facing north, the bottom-left corner of the plot (X8232-8241, Z17255-17264) | Galeri 3 from 1.0.1071 |
+| `q3d-water-engine-workshop.md` | 8285 8 17263, facing south, on the gold pad in the Testing Courtyard's Modelling Area; the gate block it may test for is three cells south of the pad (8285 7 17266) | Galeri 3 from 1.0.1073 |
 | `q2c-bells.md`, `q2e-gardener.md` | 8623 7 16941 and 8521 -1 16945, at the castle | world copies made before 1.0.1071 |
+| `q3d-water-engine.md` | 8708 11 16950, at the castle's court | world copies made before 1.0.1073 |
+
+Quests 3 and 4 followed with Galeri 3 1.0.1073 (18 Nov 2026): the Water Commanding Engine's Modelling Area is in the
+Workshop's Testing Courtyard. Its tutorial copy also gives the Agent emerald blocks to drop where the castle's gave
+grass (Cadw's November QA found a grass block hard to follow up the lift).
 
 The older files stay so that copies of the world already handed out keep working. Anything else changed in one of a
 pair should be changed in the other.
