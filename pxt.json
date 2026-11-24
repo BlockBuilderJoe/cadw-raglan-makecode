@@ -1,6 +1,6 @@
 {
   "name": "cadw-raglan-makecode",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Minecraft Education Code Builder tutorials for the Cadw Raglan Castle journey: Edward's Bell Communication System (Q2C), Edward's Mechanical Gardener (Q2E) and Edward's Water Commanding Engine (Q3D).",
   "dependencies": {
     "core": "*",

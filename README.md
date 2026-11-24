@@ -30,7 +30,7 @@ copy of its tutorial that differs only in where it teleports the Agent:
 
 | File | Agent's start | Used by |
 | --- | --- | --- |
-| `q2c-bells-workshop.md` | 8250 4 17298, facing north (Bell 1's plate ahead at Z17297, Bell 2's behind at Z17299) | Galeri 3 from 1.0.1071 |
+| `q2c-bells-workshop.md` | 8250 4 17299, facing north (Bell 1's plate ahead at Z17298, Bell 2's behind at Z17300) | Galeri 3 from 1.0.1091 |
 | `q2e-gardener-workshop.md` | 8232 8 17264, facing north, the bottom-left corner of the plot (X8232-8241, Z17255-17264) | Galeri 3 from 1.0.1071 |
 | `q3d-water-engine-workshop.md` | 8285 8 17263, facing south, on the gold pad in the Testing Courtyard's Modelling Area; the gate block it may test for is three cells south of the pad (8285 7 17266) | Galeri 3 from 1.0.1073 |
 | `q2c-bells.md`, `q2e-gardener.md` | 8623 7 16941 and 8521 -1 16945, at the castle | world copies made before 1.0.1071 |

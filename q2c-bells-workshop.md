@@ -5,7 +5,7 @@
 
 ```template
 player.onChat("ring", function () {
-    agent.teleport(world(8250, 4, 17298), NORTH)
+    agent.teleport(world(8250, 4, 17299), NORTH)
     loops.pause(1000)
     agent.move(FORWARD, 1)
     loops.pause(1000)
