@@ -293,15 +293,21 @@ player.say("Wildflowers:" + wildFlower)
 
 #### ~ tutorialhint
 
-Go to VARIABLES and Make a Variable called wildFlower, then another called leafLitter. Set your variables at the start of your code, and remember to add the change leafLitter by 1 to your if statements.
+Go to VARIABLES and Make a Variable called wildFlower, then another called leafLitter. Place both ``set`` blocks at the start of ``||player:on chat command "check"||``, and update each variable inside its own ``||logic:if||`` statement.
 
 ```blocks
-let leafLitter = 0
-let wildFlower = 0
-if (agent.inspectBlock(FORWARD) == WILDFLOWERS) {
-    wildFlower += 1
-    player.say("Wildflowers:" + wildFlower)
-}
+player.onChat("check", function () {
+    let wildFlower = 0
+    let leafLitter = 0
+    if (agent.inspectBlock(FORWARD) == WILDFLOWERS) {
+        wildFlower += 1
+        player.say("Wildflowers:" + wildFlower)
+    }
+    if (agent.inspectBlock(FORWARD) == LEAF_LITTER) {
+        leafLitter += 1
+        player.say("LeafLitter:" + leafLitter)
+    }
+})
 ```
 
 ## Test – page 2
@@ -345,7 +351,7 @@ Which part did you have to test or improve most carefully?
 
 Remember: an inventor does not simply make something work – an inventor understands why it works.
 
-When the world has confirmed your Mechanical Gardener, speak to Owain.
+When the world has confirmed your Mechanical Gardener, return to the Techno Mentor.
 
 ```ghost
 agent.move(FORWARD, 1)
@@ -363,6 +369,8 @@ player.say("Wildflowers:" + wildFlower)
 ## Optional extension – Boolean OR
 
 **“I have been wondering whether my Gardener might recognise more than one kind of flower…”**
+
+Press the **Rose Bushes button beside the garden plot** to plant Rose Bushes among the Wildflowers.
 
 Suppose the garden contains both Wildflowers and Rose Bushes. I would like my Gardener to count either of them as a Flower. Do we really need two completely separate decisions?
 
@@ -389,12 +397,14 @@ player.say("Flowers:" + flowers)
 
 #### ~ tutorialhint
 
-Go to LOGIC for or. Use your inspect block from before, and create a new inspect block for a rose bush. Create a variable called flowers.
+Press the **Rose Bushes button beside the garden plot** first so there are Rose Bushes to test. Go to LOGIC for or. Use your inspect block from before, and create a new inspect block for a rose bush. Create a variable called flowers and set it to 0 at the start of ``||player:on chat command "check"||``.
 
 ```blocks
-let flowers = 0
-if (agent.inspectBlock(FORWARD) == WILDFLOWERS || agent.inspectBlock(FORWARD) == ROSE_BUSH) {
-    flowers += 1
-    player.say("Flowers:" + flowers)
-}
+player.onChat("check", function () {
+    let flowers = 0
+    if (agent.inspectBlock(FORWARD) == WILDFLOWERS || agent.inspectBlock(FORWARD) == ROSE_BUSH) {
+        flowers += 1
+        player.say("Flowers:" + flowers)
+    }
+})
 ```

@@ -190,7 +190,7 @@ What did you learn that you didn't know when you first opened my notebook?
 
 Remember... every successful inventor carries today's discoveries into the next investigation.
 
-When the world has confirmed your S–O–S, speak to Owain.
+When the world has confirmed your S–O–S, return to the Techno Mentor to explore the optional extensions or finish and speak to Owain.
 
 ```ghost
 agent.move(FORWARD, 1)
@@ -205,9 +205,7 @@ for (let index = 0; index < 3; index++) {
 
 This page is optional, once the world has confirmed your S–O–S.
 
-**Notebook Observation 4 (Optional Extension)**
-
-"Your invention now works... but can it work more elegantly? Could repeated instructions be simplified?"
+If you'd like an extra challenge, explore ways to organise or simplify your working program using repeated patterns — then test it again with **ring**.
 
 ```ghost
 agent.move(FORWARD, 1)
@@ -223,13 +221,6 @@ sendLetter()
 
 #### ~ tutorialhint
 
-Look for repeated patterns in your program. Repeated instructions can be simplified using a Repeat Loop, and a Function can represent the repeated behaviour required to transmit a letter.
+**Notebook Observation 4 (Optional Extension)**
 
-```blocks
-for (let index = 0; index < 3; index++) {
-    agent.move(FORWARD, 1)
-    loops.pause(1000)
-    agent.move(BACK, 1)
-    loops.pause(1000)
-}
-```
+"Your invention now works... but can it work more elegantly? Could repeated instructions be simplified?"
